@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+}
+
+.grid-cell {
+    border-width: 2px 2px 2px 2px;
+    border-color: black;
+    border-style: solid;
+    height: 40px;
+    width: 40px;
+}
+
+/* make left-most border 4px width */
+#col-container-0 .grid-cell {
+    border-left: 4px solid black;
+}
+
+/* make right-most border 4px width */
+#col-container-15 .grid-cell {
+    border-right: 4px solid black;
+}
+
+/* make top-most borders 4px width */
+.col-container #grid-cell-0 {
+    border-top: 4px solid black;
+}
+
+/* make bottom-most borders 4px width */
+.col-container #grid-cell-15 {
+    border-bottom: 4px solid black;
+}
