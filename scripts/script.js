@@ -18,3 +18,9 @@ for (let i = 0; i < 16; i++) {
     }
 }
 
+// hover effect so that grid divs change color when mouse passes over them
+const gridCells = document.querySelectorAll('.grid-cell');
+
+gridCells.forEach((gridCell) => {
+    gridCell.addEventListener('mouseenter', (e) => e.target.style.backgroundColor = 'black');
+});
