@@ -1,31 +1,37 @@
 .container {
     display: flex;
+    height: 800px;
+    width: 800px;
 }
 
+.col-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 .grid-cell {
+    flex: 1;
     border-width: 2px 2px 2px 2px;
     border-color: black;
     border-style: solid;
-    height: 40px;
-    width: 40px;
 }
 
 /* make left-most border 4px width */
-#col-container-0 .grid-cell {
+.col-container:first-child .grid-cell {
     border-left: 4px solid black;
 }
 
 /* make right-most border 4px width */
-#col-container-15 .grid-cell {
+.col-container:last-child .grid-cell {
     border-right: 4px solid black;
 }
 
 /* make top-most borders 4px width */
-.col-container #grid-cell-0 {
+.col-container .grid-cell:first-child {
     border-top: 4px solid black;
 }
 
 /* make bottom-most borders 4px width */
-.col-container #grid-cell-15 {
+.col-container .grid-cell:last-child {
     border-bottom: 4px solid black;
 }
